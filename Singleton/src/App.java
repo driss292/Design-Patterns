@@ -8,5 +8,9 @@ public class App {
         for (int i = 0; i < 5; i++) {
             ThreadSafeSingleton.getInstance();
         }
+
+        for (int i = 0; i < 5; i++) {
+            ThreadSafeSingleton.getDoubleCheckThreadSafeSingleton();
+        }
     }
 }
