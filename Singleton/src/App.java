@@ -3,6 +3,10 @@ public class App {
         EagerInitSingleton.getInstance();
         StaticBlockInit.getInstance();
         LazyInitSingleton.getInstance();
-        // LazyInitSingleton.getInstance();
+        LazyInitSingleton.getInstance();
+
+        for (int i = 0; i < 5; i++) {
+            ThreadSafeSingleton.getInstance();
+        }
     }
 }
