@@ -1,5 +1,5 @@
 public class LazyInitSingleton {
-    private static LazyInitSingleton instance;
+    private static LazyInitSingleton instance = null;
 
     private LazyInitSingleton() {
     }
