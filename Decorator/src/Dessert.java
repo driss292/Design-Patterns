@@ -1,3 +1,5 @@
+import java.text.NumberFormat;
+
 public abstract class Dessert {
     private String libelle;
     private double prix;
@@ -19,7 +21,10 @@ public abstract class Dessert {
     }
 
     public String toString() {
-        return getLibelle() + " : " + getPrix() + " €";
+
+        NumberFormat formatter = NumberFormat.getInstance();
+        formatter.setMinimumFractionDigits(2); // 2 chiffres après la virgule.
+        return getLibelle() + " : " + formatter.format(getPrix()) + " €";
     }
 
 }

@@ -9,7 +9,7 @@ public class Chocolat extends DecoratorIngredient {
     // On affiche le libellé du dessert et on rajoute le libellé de l'ingrédient
     // chocolat.
     public String getLibelle() {
-        return dessert.getLibelle() + " chocolat";
+        return dessert.getLibelle() + ", chocolat";
     }
 
     // On additionne le prix du dessert et le prix de l'ingrédient chocolat.
