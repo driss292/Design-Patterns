@@ -10,7 +10,7 @@ public abstract class Dessert {
         return prix;
     }
 
-    protected void setLibelle(String string) {
+    protected void setLibelle(String libelle) {
         this.libelle = libelle;
     }
 
@@ -19,7 +19,7 @@ public abstract class Dessert {
     }
 
     public String toString() {
-        return "";
+        return getLibelle() + " : " + getPrix() + " €";
     }
 
 }
